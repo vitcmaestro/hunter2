@@ -13,5 +13,6 @@ while(j<n):
     if(res<miner):
        miner = res
        ind = n-j
+       t1 = j
     j+=1
-print(ind)
+print(t1-ind)
