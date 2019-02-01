@@ -4,6 +4,5 @@ lucky = 0
 for i in range(n):
     x = (n*(i+1))
     if(x in play):
-        lucky = play[i]
-        break
+        lucky+=1
 print(lucky)
