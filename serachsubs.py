@@ -55,3 +55,5 @@ for i in range(5):
                     res = str(i)+" "+str(j)+"\n"+str(i)+" "+str(j-l+1)
                     print(res)
                     break
+if(res == ""):
+    print(0)
