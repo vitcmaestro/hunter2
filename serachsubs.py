@@ -11,15 +11,20 @@ for i in range(5):
     j+=5
     a.append(temp)
 ins = input("")
-print(a)
 n = len(ins)
 for i in range(5):
     for j in range(5):
         if(a[i][j] == ins[0]):
-            x = 1
-            while(x+i<=4 and x<n):
-                if(a[x+i][j] == ins[x]):
-                    z+=1
+            if(n == 1):
+                res = "1"
+                print(str(i)+" "+str(j))
+                print(str(i)+" "+str(j))
+                exit()
+            if(n!=1):
+                x = 1
+                while(x+i<=4 and x<n):
+                    if(a[x+i][j] == ins[x]):
+                        z+=1
                 x+=1
                 if(z == n-1):
                     res = str(i)+" "+str(j)+"\n"+str(x+i-1)+" "+str(j)
@@ -55,5 +60,3 @@ for i in range(5):
                     res = str(i)+" "+str(j)+"\n"+str(i)+" "+str(j-l+1)
                     print(res)
                     break
-if(res == ""):
-    print(0)
