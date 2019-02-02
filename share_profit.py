@@ -1,0 +1,5 @@
+n= int(input(""))
+a = list(map(int,input().split()))
+start = max(a)
+end = min(a)
+print(start-end)
