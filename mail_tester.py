@@ -18,7 +18,8 @@ if "@" in test and '.' in test:
             print("NO")
         elif(test[l-4:l] != ".com"):
             print("NO")
+        else:
+            print("YES")
 elif("@" not in test or "." not in test):
     print("NO")
-else:
-    print("YES")
+
