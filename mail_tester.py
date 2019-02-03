@@ -4,6 +4,7 @@ d = True
 freq = collections.Counter(test)
 l = len(test)
 if "@" in test and '.' in test:
+    diff = test.index('.') - test.index("@")
     for x,y in freq.items():
         if(x== '@' and y!=1):
             print("NO")
@@ -12,7 +13,7 @@ if "@" in test and '.' in test:
             print("No")
             break
     else:
-        if(test.index('.') - test.index("@") <4):
+        if(diff <4 and diff >5):
             print("NO")
         elif(test.index("@") <3):
             print("NO")
