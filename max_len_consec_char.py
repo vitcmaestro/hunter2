@@ -8,7 +8,7 @@ for i in range(1,len(a)):
         count+=1
         if(count > maxer):
             maxer = count
-            ans = a[i-1]
+            ans = a[i]
     else:
         count = 1
         check = a[i]
