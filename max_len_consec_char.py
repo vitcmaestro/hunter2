@@ -12,4 +12,4 @@ for i in range(1,len(a)):
             ans = a[i-1]
         count = 1
         check = a[i]
-print(maxer,ans)
+print(ans,maxer)
