@@ -8,7 +8,7 @@ else:
     for i in range(k):
         cache[i] = a[i]
         freq.append(i)
-    for i in range(k+1,n):
+    for i in range(k,n):
         if(a[i] in cache):
             freq.remove(cache.index(a[i]))
             freq.append(cache.index(a[i]))
