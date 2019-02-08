@@ -6,10 +6,11 @@ ans = check
 for i in range(1,len(a)):
     if(a[i] == check):
         count+=1
-    else:
         if(count > maxer):
             maxer = count
             ans = a[i-1]
+    else:
         count = 1
         check = a[i]
+    
 print(ans,maxer)
