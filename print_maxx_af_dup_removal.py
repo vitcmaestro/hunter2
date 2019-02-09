@@ -8,4 +8,4 @@ for i in range(len(n)-1):
         del x[i]
         ans.append(x)
 pri = max(ans)
-print(" ".join(map(str,x)))
+print("".join(map(str,pri)))
