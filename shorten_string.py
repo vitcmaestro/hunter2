@@ -15,4 +15,4 @@ for i in range(1,len(n)):
             count = 1
             check = n[i]
            
-print(s)
+print(s.strip())
