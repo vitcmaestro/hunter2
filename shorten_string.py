@@ -1,5 +1,5 @@
 n = input("")
-n = n+"."
+n = n+" "
 check = n[0]
 s = ""
 count = 1
