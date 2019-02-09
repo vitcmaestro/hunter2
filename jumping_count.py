@@ -15,7 +15,7 @@ def isjumping(x):
             return False
 n=int(input(""))
 count = 0
-for i in range(n):
+for i in range(n+1):
     if(isjumping(i)):
         count+=1
 print(count)
